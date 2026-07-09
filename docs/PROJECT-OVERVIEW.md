@@ -5,22 +5,31 @@ Last updated: 2026-07-09
 ## What this repo is
 
 Static GitHub Pages site for `Wild Horse Simulator Family 3D`
-(`magic.horse.simulator.free.sim.games.kids`) and `Winter Tiger Family Simulator`
-(`unimix.studio.winter.tiger.family.simulator`).
+(`magic.horse.simulator.free.sim.games.kids`), `Winter Tiger Family Simulator`
+(`unimix.studio.winter.tiger.family.simulator`), `Fox Family Simulator`
+(`unimix.studio.fox.family.simulator`), `Panther Family Simulator`
+(`unimix.studio.panther.family.simulator`), and `Wolf Family Simulator`
+(`unimix.studio.wolf.simulator`).
 
 ## Live URLs
 
 - Site: `https://mikhaisuvorovkz.github.io/`
 - Wild Horse Privacy Policy: `https://mikhaisuvorovkz.github.io/privacy-policy/`
 - Winter Tiger Privacy Policy: `https://mikhaisuvorovkz.github.io/winter-tiger-family-simulator/privacy-policy/`
+- Fox Privacy Policy: `https://mikhaisuvorovkz.github.io/fox-family-simulator/privacy-policy/`
+- Panther Privacy Policy: `https://mikhaisuvorovkz.github.io/panther-family-simulator/privacy-policy/`
+- Wolf Privacy Policy: `https://mikhaisuvorovkz.github.io/wolf-simulator/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 - Winter Tiger Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator`
+- Fox Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.fox.family.simulator`
+- Panther Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.panther.family.simulator`
+- Wolf Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.wolf.simulator`
 
 ## Current content
 
-- Home page with a rotating hero carousel for both games.
-- Privacy policy pages for both app packages.
+- Home page with a rotating hero carousel for five games.
+- Privacy policy pages for all app packages.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 
 ## Implementation notes

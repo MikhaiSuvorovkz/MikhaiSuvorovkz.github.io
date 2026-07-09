@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Panther family simulator banner">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1320"/>
+      <stop offset="48%" stop-color="#18233c"/>
+      <stop offset="100%" stop-color="#1b4d55"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.75" cy="0.18" r="0.22">
+      <stop offset="0%" stop-color="#f5f5ee" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#f5f5ee" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#f5f5ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#142025"/>
+      <stop offset="100%" stop-color="#081014"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#484e59"/>
+      <stop offset="100%" stop-color="#202632"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1320" cy="132" r="220" fill="url(#moon)"/>
+
+  <path d="M0 532L160 468L300 490L440 420L580 480L730 372L860 448L1040 340L1190 420L1360 360L1600 410V900H0Z" fill="#22313a" opacity="0.7"/>
+  <path d="M0 590C200 548 360 626 520 592C690 556 815 470 972 500C1110 525 1260 620 1600 560V900H0Z" fill="url(#ground)"/>
+  <path d="M0 625C220 598 360 660 540 642C720 625 900 548 1088 560C1260 572 1418 650 1600 620V900H0Z" fill="#0d171c" opacity="0.75"/>
+
+  <g fill="#0e171d">
+    <path d="M120 690L196 560L272 690Z"/>
+    <path d="M186 690L262 535L338 690Z"/>
+    <path d="M1320 690L1392 550L1462 690Z"/>
+    <path d="M1396 690L1468 530L1546 690Z"/>
+  </g>
+
+  <g fill="#1a5f59" opacity="0.8">
+    <circle cx="120" cy="544" r="18"/>
+    <circle cx="150" cy="520" r="14"/>
+    <circle cx="182" cy="546" r="20"/>
+    <circle cx="1430" cy="520" r="20"/>
+    <circle cx="1464" cy="548" r="16"/>
+    <circle cx="1496" cy="524" r="14"/>
+  </g>
+
+  <g transform="translate(1040 486)">
+    <path d="M0 160C30 96 72 42 142 18C218 -8 286 8 348 64C398 108 418 170 408 230C396 300 344 342 270 348C194 354 126 322 82 282C22 226 -16 196 0 160Z" fill="url(#rock)"/>
+    <path d="M24 160C68 120 120 98 184 96C248 94 300 112 348 158" fill="none" stroke="#59606e" stroke-width="18" stroke-linecap="round" opacity="0.35"/>
+  </g>
+
+  <g id="panther-family" transform="translate(0 8)">
+    <ellipse cx="104" cy="122" rx="64" ry="40" fill="#101318"/>
+    <ellipse cx="100" cy="127" rx="31" ry="17" fill="#252930"/>
+    <circle cx="160" cy="86" r="30" fill="#12151d"/>
+    <polygon points="142,62 152,34 164,62" fill="#12151d"/>
+    <polygon points="166,62 176,34 188,62" fill="#12151d"/>
+    <polygon points="45,112 0,98 44,150 74,136" fill="#20232d"/>
+    <polygon points="72,102 96,76 112,114" fill="#2b3038"/>
+    <ellipse cx="152" cy="102" rx="14" ry="11" fill="#d7d9de"/>
+    <circle cx="154" cy="92" r="3" fill="#08090c"/>
+    <circle cx="167" cy="92" r="3" fill="#08090c"/>
+    <rect x="74" y="144" width="9" height="40" rx="4.5" fill="#090b10"/>
+    <rect x="98" y="144" width="9" height="40" rx="4.5" fill="#090b10"/>
+    <rect x="131" y="144" width="9" height="40" rx="4.5" fill="#090b10"/>
+    <rect x="155" y="144" width="9" height="40" rx="4.5" fill="#090b10"/>
+    <path d="M24 124C4 116 -14 106 -32 92" fill="none" stroke="#1d2026" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="36" cy="122" r="12" fill="#12151d"/>
+  </g>
+
+  <use href="#panther-family" transform="translate(1000 500) scale(1.28)"/>
+  <use href="#panther-family" transform="translate(820 628) scale(0.76)"/>
+  <use href="#panther-family" transform="translate(1230 640) scale(0.74)"/>
+
+  <g fill="#71d6cf" opacity="0.22">
+    <ellipse cx="240" cy="214" rx="130" ry="50"/>
+    <ellipse cx="390" cy="178" rx="80" ry="26"/>
+    <ellipse cx="1120" cy="200" rx="180" ry="54"/>
+  </g>
+
+  <g fill="#c5fff5" opacity="0.55">
+    <circle cx="220" cy="154" r="5"/>
+    <circle cx="256" cy="198" r="3"/>
+    <circle cx="310" cy="130" r="4"/>
+    <circle cx="1180" cy="174" r="5"/>
+    <circle cx="1220" cy="216" r="3"/>
+    <circle cx="1272" cy="156" r="4"/>
+  </g>
+</svg>

@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simulator Games Collection</title>
-    <meta name="description" content="Official website for Wild Horse Simulator Family 3D and Winter Tiger Family Simulator.">
+    <meta name="description" content="Official website for Wild Horse, Winter Tiger, Fox, Panther, and Wolf simulator games.">
+    <link rel="preload" as="image" href="/assets/horse-family-hero.png">
     <link rel="preload" as="image" href="/assets/winter-tiger-family-hero.png">
+    <link rel="preload" as="image" href="/assets/fox-family-hero.svg">
+    <link rel="preload" as="image" href="/assets/panther-family-hero.svg">
+    <link rel="preload" as="image" href="/assets/wolf-family-hero.svg">
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
   <body>
@@ -49,14 +53,17 @@
           <div class="carousel-tabs" aria-label="Choose featured game">
             <button class="carousel-tab is-active" type="button" data-carousel-tab="0" aria-pressed="true">Wild Horse</button>
             <button class="carousel-tab" type="button" data-carousel-tab="1" aria-pressed="false">Winter Tiger</button>
+            <button class="carousel-tab" type="button" data-carousel-tab="2" aria-pressed="false">Fox Family</button>
+            <button class="carousel-tab" type="button" data-carousel-tab="3" aria-pressed="false">Panther Family</button>
+            <button class="carousel-tab" type="button" data-carousel-tab="4" aria-pressed="false">Wolf Family</button>
           </div>
         </div>
       </section>
 
       <section class="content-section intro">
         <div>
-          <h2>Two family adventures</h2>
-          <p>The homepage rotates between the original horse simulator and the new winter tiger simulator. Each game keeps its own store link and privacy page.</p>
+          <h2>Five family adventures</h2>
+          <p>The homepage rotates between five simulator games. Each game keeps its own store link and privacy page.</p>
         </div>
 
         <div class="game-list" aria-label="Game quick links">
@@ -77,13 +84,40 @@
               <a href="/winter-tiger-family-simulator/privacy-policy/">Privacy Policy</a>
             </div>
           </article>
+
+          <article class="game-card">
+            <h3>Fox Family Simulator</h3>
+            <p>Explore autumn forests and raise a fox family through the wild.</p>
+            <div class="card-links">
+              <a href="https://play.google.com/store/apps/details?id=unimix.studio.fox.family.simulator">Google Play</a>
+              <a href="/fox-family-simulator/privacy-policy/">Privacy Policy</a>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <h3>Panther Family Simulator</h3>
+            <p>Roam moonlit jungle paths and protect a panther family.</p>
+            <div class="card-links">
+              <a href="https://play.google.com/store/apps/details?id=unimix.studio.panther.family.simulator">Google Play</a>
+              <a href="/panther-family-simulator/privacy-policy/">Privacy Policy</a>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <h3>Wolf Family Simulator</h3>
+            <p>Travel through snowy forests and guide a wolf pack together.</p>
+            <div class="card-links">
+              <a href="https://play.google.com/store/apps/details?id=unimix.studio.wolf.simulator">Google Play</a>
+              <a href="/wolf-simulator/privacy-policy/">Privacy Policy</a>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="content-section compliance">
         <div>
           <h2>Developer files</h2>
-          <p>Advertising seller verification and both privacy policies are available from this site.</p>
+          <p>Advertising seller verification and all privacy policies are available from this site.</p>
         </div>
 
         <div class="link-panel">
@@ -99,6 +133,18 @@
             <span>Tiger data practices</span>
             <strong>Winter Tiger Policy</strong>
           </a>
+          <a href="/fox-family-simulator/privacy-policy/">
+            <span>Fox data practices</span>
+            <strong>Fox Policy</strong>
+          </a>
+          <a href="/panther-family-simulator/privacy-policy/">
+            <span>Panther data practices</span>
+            <strong>Panther Policy</strong>
+          </a>
+          <a href="/wolf-simulator/privacy-policy/">
+            <span>Wolf data practices</span>
+            <strong>Wolf Policy</strong>
+          </a>
         </div>
       </section>
     </main>
@@ -107,6 +153,9 @@
       <span>Simulator Games</span>
       <a href="/privacy-policy/">Wild Horse Privacy</a>
       <a href="/winter-tiger-family-simulator/privacy-policy/">Winter Tiger Privacy</a>
+      <a href="/fox-family-simulator/privacy-policy/">Fox Privacy</a>
+      <a href="/panther-family-simulator/privacy-policy/">Panther Privacy</a>
+      <a href="/wolf-simulator/privacy-policy/">Wolf Privacy</a>
       <a href="/app-ads.txt">app-ads.txt</a>
     </footer>
 
@@ -129,7 +178,36 @@
             imageUrl: '/assets/winter-tiger-family-hero.png',
             alt: 'Winter tiger family in a snowy pine forest at dawn.',
           },
+          {
+            title: 'Fox Family Simulator',
+            description: 'Explore autumn forests, raise fox cubs, and move through a bright woodland world.',
+            playUrl: 'https://play.google.com/store/apps/details?id=unimix.studio.fox.family.simulator',
+            privacyUrl: '/fox-family-simulator/privacy-policy/',
+            imageUrl: '/assets/fox-family-hero.svg',
+            alt: 'Fox family in an autumn forest with warm sunset light.',
+          },
+          {
+            title: 'Panther Family Simulator',
+            description: 'Roam moonlit jungle paths, protect the den, and guide a panther family.',
+            playUrl: 'https://play.google.com/store/apps/details?id=unimix.studio.panther.family.simulator',
+            privacyUrl: '/panther-family-simulator/privacy-policy/',
+            imageUrl: '/assets/panther-family-hero.svg',
+            alt: 'Panther family in a moonlit jungle landscape.',
+          },
+          {
+            title: 'Wolf Family Simulator',
+            description: 'Travel through snowy forests, hunt together, and guide a wolf pack.',
+            playUrl: 'https://play.google.com/store/apps/details?id=unimix.studio.wolf.simulator',
+            privacyUrl: '/wolf-simulator/privacy-policy/',
+            imageUrl: '/assets/wolf-family-hero.svg',
+            alt: 'Wolf family in a snowy forest under a cold sky.',
+          },
         ];
+
+        games.forEach(({ imageUrl }) => {
+          const preloadImage = new Image();
+          preloadImage.src = imageUrl;
+        });
 
         const carousel = document.querySelector('[data-carousel]');
         const heroImage = document.querySelector('[data-hero-image]');

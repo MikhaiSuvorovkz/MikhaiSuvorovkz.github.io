@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Wolf family simulator banner">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1730"/>
+      <stop offset="48%" stop-color="#1f355c"/>
+      <stop offset="100%" stop-color="#d9e4ef"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.2" cy="0.18" r="0.25">
+      <stop offset="0%" stop-color="#fbfbf6" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#fbfbf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fbfbf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfe7ee"/>
+      <stop offset="100%" stop-color="#8da1b4"/>
+    </linearGradient>
+    <linearGradient id="tree" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#23402f"/>
+      <stop offset="100%" stop-color="#101f18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="300" cy="128" r="250" fill="url(#moon)"/>
+
+  <path d="M0 528L160 470L300 488L455 418L610 462L760 355L910 420L1080 340L1235 404L1400 356L1600 398V900H0Z" fill="#2a4161" opacity="0.62"/>
+  <path d="M0 590C210 560 362 618 530 598C705 578 828 520 995 525C1170 530 1320 604 1600 576V900H0Z" fill="url(#ground)"/>
+  <path d="M0 645C240 620 394 675 560 664C732 652 900 590 1092 604C1270 616 1412 678 1600 654V900H0Z" fill="#b8c7d3" opacity="0.58"/>
+  <path d="M0 690C220 670 370 710 530 704C720 696 896 650 1060 664C1238 680 1400 735 1600 708V900H0Z" fill="#93a8ba" opacity="0.72"/>
+
+  <g fill="url(#tree)">
+    <path d="M110 698L178 562L248 698Z"/>
+    <path d="M168 698L236 536L308 698Z"/>
+    <path d="M1254 698L1328 546L1402 698Z"/>
+    <path d="M1330 698L1404 520L1480 698Z"/>
+  </g>
+
+  <g fill="#2b4e39" opacity="0.92">
+    <path d="M88 576L176 416L266 576Z"/>
+    <path d="M104 520L176 370L250 520Z"/>
+    <path d="M118 466L176 332L236 466Z"/>
+    <path d="M1228 560L1326 392L1424 560Z"/>
+    <path d="M1246 496L1326 358L1408 496Z"/>
+    <path d="M1260 438L1326 310L1392 438Z"/>
+  </g>
+
+  <g fill="#5d7184" opacity="0.35">
+    <path d="M0 700L140 686L270 710L400 695L530 722L660 706L790 731L920 714L1050 738L1180 716L1310 742L1440 728L1600 742V900H0Z"/>
+  </g>
+
+  <g id="wolf-family" transform="translate(0 8)">
+    <ellipse cx="104" cy="122" rx="64" ry="40" fill="#8e9aa8"/>
+    <ellipse cx="100" cy="127" rx="31" ry="17" fill="#dde4ea"/>
+    <circle cx="160" cy="86" r="30" fill="#8894a1"/>
+    <polygon points="142,62 152,34 164,62" fill="#8894a1"/>
+    <polygon points="166,62 176,34 188,62" fill="#8894a1"/>
+    <polygon points="45,112 0,98 44,150 74,136" fill="#b0bac5"/>
+    <polygon points="72,102 96,76 112,114" fill="#6f7a86"/>
+    <ellipse cx="152" cy="102" rx="14" ry="11" fill="#f6fafc"/>
+    <circle cx="154" cy="92" r="3" fill="#11161b"/>
+    <circle cx="167" cy="92" r="3" fill="#11161b"/>
+    <rect x="74" y="144" width="9" height="40" rx="4.5" fill="#5b6673"/>
+    <rect x="98" y="144" width="9" height="40" rx="4.5" fill="#5b6673"/>
+    <rect x="131" y="144" width="9" height="40" rx="4.5" fill="#5b6673"/>
+    <rect x="155" y="144" width="9" height="40" rx="4.5" fill="#5b6673"/>
+    <path d="M24 124C4 116 -14 106 -32 92" fill="none" stroke="#9eabb7" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="36" cy="122" r="12" fill="#8b95a3"/>
+  </g>
+
+  <use href="#wolf-family" transform="translate(1060 496) scale(1.24)"/>
+  <use href="#wolf-family" transform="translate(874 632) scale(0.72)"/>
+  <use href="#wolf-family" transform="translate(1268 648) scale(0.76)"/>
+
+  <g fill="#f5fbff" opacity="0.7">
+    <circle cx="96" cy="168" r="4"/>
+    <circle cx="144" cy="136" r="3"/>
+    <circle cx="220" cy="220" r="5"/>
+    <circle cx="1300" cy="178" r="4"/>
+    <circle cx="1368" cy="226" r="3"/>
+    <circle cx="1428" cy="148" r="5"/>
+  </g>
+
+  <g fill="#ffffff" opacity="0.35">
+    <path d="M0 770C260 736 380 792 550 784C740 776 880 726 1060 732C1238 738 1392 802 1600 780V900H0Z"/>
+  </g>
+</svg>
