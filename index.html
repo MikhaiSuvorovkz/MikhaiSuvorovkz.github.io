@@ -3,54 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wild Horse Simulator Family 3D</title>
-    <meta name="description" content="Official website for Wild Horse Simulator Family 3D.">
+    <title>Simulator Games Collection</title>
+    <meta name="description" content="Official website for Wild Horse Simulator Family 3D and Winter Tiger Family Simulator.">
+    <link rel="preload" as="image" href="/assets/winter-tiger-family-hero.png">
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Wild Horse Simulator Family 3D home">
-        <span class="brand-mark" aria-hidden="true">WH</span>
-        <span>Wild Horse Simulator Family 3D</span>
+      <a class="brand" href="/" aria-label="Simulator Games home">
+        <span class="brand-mark" aria-hidden="true">SG</span>
+        <span>Simulator Games</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="/privacy-policy/">Privacy</a>
+        <a href="/privacy-policy/">Wild Horse Privacy</a>
+        <a href="/winter-tiger-family-simulator/privacy-policy/">Winter Tiger Privacy</a>
         <a href="/app-ads.txt">app-ads.txt</a>
-        <a href="https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids">Google Play</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <img class="hero-image" src="/assets/horse-family-hero.png" alt="Stylized wild horse family in a mountain forest landscape.">
-        <div class="hero-overlay"></div>
+      <section class="hero" aria-label="Featured simulator games" aria-roledescription="carousel" data-carousel>
+        <div class="hero-stage" aria-hidden="true">
+          <img
+            class="hero-image"
+            data-hero-image
+            src="/assets/horse-family-hero.png"
+            alt="Stylized wild horse family in a mountain forest landscape."
+            loading="eager"
+            fetchpriority="high"
+          >
+          <div class="hero-overlay"></div>
+        </div>
+
         <div class="hero-content">
-          <h1>Wild Horse Simulator Family 3D</h1>
-          <p>Build your wild horse family, raise foals, survive in the forest, and explore a bright open wilderness.</p>
+          <div class="hero-copy">
+            <h1 data-hero-title>Wild Horse Simulator Family 3D</h1>
+            <p data-hero-description>Build your wild horse family, raise foals, survive in the forest, and explore a bright open wilderness.</p>
+          </div>
+
           <div class="hero-actions">
-            <a class="button primary" href="https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids">View on Google Play</a>
-            <a class="button secondary" href="/privacy-policy/">Privacy Policy</a>
+            <a class="button primary" data-hero-play href="https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids">View on Google Play</a>
+            <a class="button secondary" data-hero-privacy href="/privacy-policy/">Privacy Policy</a>
+          </div>
+
+          <div class="carousel-tabs" aria-label="Choose featured game">
+            <button class="carousel-tab is-active" type="button" data-carousel-tab="0" aria-pressed="true">Wild Horse</button>
+            <button class="carousel-tab" type="button" data-carousel-tab="1" aria-pressed="false">Winter Tiger</button>
           </div>
         </div>
       </section>
 
       <section class="content-section intro">
         <div>
-          <h2>Explore, care, survive</h2>
-          <p>Follow your horse through forests, mountain paths, and open fields. Find food, protect your family, and grow a herd in a friendly 3D animal simulator.</p>
+          <h2>Two family adventures</h2>
+          <p>The homepage rotates between the original horse simulator and the new winter tiger simulator. Each game keeps its own store link and privacy page.</p>
         </div>
-        <div class="feature-list" aria-label="Game features">
-          <article>
-            <h3>Horse family</h3>
-            <p>Raise foals and keep your herd together.</p>
+
+        <div class="game-list" aria-label="Game quick links">
+          <article class="game-card">
+            <h3>Wild Horse Simulator Family 3D</h3>
+            <p>Build your herd, raise foals, and explore forest trails.</p>
+            <div class="card-links">
+              <a href="https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids">Google Play</a>
+              <a href="/privacy-policy/">Privacy Policy</a>
+            </div>
           </article>
-          <article>
-            <h3>Open nature</h3>
-            <p>Travel through forests, rivers, hills, and wild spaces.</p>
-          </article>
-          <article>
-            <h3>Gentle adventure</h3>
-            <p>A colorful animal simulator made for casual play.</p>
+
+          <article class="game-card">
+            <h3>Winter Tiger Family Simulator</h3>
+            <p>Guide a tiger family through snowy forests and mountain light.</p>
+            <div class="card-links">
+              <a href="https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator">Google Play</a>
+              <a href="/winter-tiger-family-simulator/privacy-policy/">Privacy Policy</a>
+            </div>
           </article>
         </div>
       </section>
@@ -58,25 +83,125 @@
       <section class="content-section compliance">
         <div>
           <h2>Developer files</h2>
-          <p>Advertising seller verification and privacy information are available from the root of this website.</p>
+          <p>Advertising seller verification and both privacy policies are available from this site.</p>
         </div>
+
         <div class="link-panel">
           <a href="/app-ads.txt">
             <span>Authorized sellers</span>
             <strong>app-ads.txt</strong>
           </a>
           <a href="/privacy-policy/">
-            <span>Data practices</span>
-            <strong>Privacy Policy</strong>
+            <span>Horse data practices</span>
+            <strong>Wild Horse Policy</strong>
+          </a>
+          <a href="/winter-tiger-family-simulator/privacy-policy/">
+            <span>Tiger data practices</span>
+            <strong>Winter Tiger Policy</strong>
           </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Wild Horse Simulator Family 3D</span>
-      <a href="/privacy-policy/">Privacy Policy</a>
+      <span>Simulator Games</span>
+      <a href="/privacy-policy/">Wild Horse Privacy</a>
+      <a href="/winter-tiger-family-simulator/privacy-policy/">Winter Tiger Privacy</a>
       <a href="/app-ads.txt">app-ads.txt</a>
     </footer>
+
+    <script>
+      (() => {
+        const games = [
+          {
+            title: 'Wild Horse Simulator Family 3D',
+            description: 'Build your wild horse family, raise foals, survive in the forest, and explore a bright open wilderness.',
+            playUrl: 'https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids',
+            privacyUrl: '/privacy-policy/',
+            imageUrl: '/assets/horse-family-hero.png',
+            alt: 'Stylized wild horse family in a mountain forest landscape.',
+          },
+          {
+            title: 'Winter Tiger Family Simulator',
+            description: 'Guide a tiger family through snowy forests, frozen rivers, and sunrise mountain paths.',
+            playUrl: 'https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator',
+            privacyUrl: '/winter-tiger-family-simulator/privacy-policy/',
+            imageUrl: '/assets/winter-tiger-family-hero.png',
+            alt: 'Winter tiger family in a snowy pine forest at dawn.',
+          },
+        ];
+
+        const carousel = document.querySelector('[data-carousel]');
+        const heroImage = document.querySelector('[data-hero-image]');
+        const heroTitle = document.querySelector('[data-hero-title]');
+        const heroDescription = document.querySelector('[data-hero-description]');
+        const heroPlay = document.querySelector('[data-hero-play]');
+        const heroPrivacy = document.querySelector('[data-hero-privacy]');
+        const tabs = Array.from(document.querySelectorAll('[data-carousel-tab]'));
+
+        if (!carousel || !heroImage || !heroTitle || !heroDescription || !heroPlay || !heroPrivacy || tabs.length === 0) {
+          return;
+        }
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let activeIndex = 0;
+        let rotationId = null;
+
+        function applyGame(index) {
+          const game = games[index];
+          activeIndex = index;
+
+          heroImage.src = game.imageUrl;
+          heroImage.alt = game.alt;
+          heroTitle.textContent = game.title;
+          heroDescription.textContent = game.description;
+          heroPlay.href = game.playUrl;
+          heroPrivacy.href = game.privacyUrl;
+
+          tabs.forEach((tab, tabIndex) => {
+            const isActive = tabIndex === index;
+            tab.classList.toggle('is-active', isActive);
+            tab.setAttribute('aria-pressed', String(isActive));
+          });
+        }
+
+        function stopRotation() {
+          if (rotationId !== null) {
+            window.clearInterval(rotationId);
+            rotationId = null;
+          }
+        }
+
+        function startRotation() {
+          stopRotation();
+          if (reduceMotion) {
+            return;
+          }
+          rotationId = window.setInterval(() => {
+            applyGame((activeIndex + 1) % games.length);
+          }, 6500);
+        }
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const index = Number(tab.dataset.carouselTab || 0);
+            applyGame(index);
+            startRotation();
+          });
+        });
+
+        carousel.addEventListener('pointerenter', stopRotation);
+        carousel.addEventListener('pointerleave', startRotation);
+        carousel.addEventListener('focusin', stopRotation);
+        carousel.addEventListener('focusout', (event) => {
+          if (!carousel.contains(event.relatedTarget)) {
+            startRotation();
+          }
+        });
+
+        applyGame(0);
+        startRotation();
+      })();
+    </script>
   </body>
 </html>

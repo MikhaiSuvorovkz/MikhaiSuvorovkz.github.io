@@ -5,19 +5,22 @@ Last updated: 2026-07-09
 ## What this repo is
 
 Static GitHub Pages site for `Wild Horse Simulator Family 3D`
-(`magic.horse.simulator.free.sim.games.kids`).
+(`magic.horse.simulator.free.sim.games.kids`) and `Winter Tiger Family Simulator`
+(`unimix.studio.winter.tiger.family.simulator`).
 
 ## Live URLs
 
 - Site: `https://mikhaisuvorovkz.github.io/`
-- Privacy Policy: `https://mikhaisuvorovkz.github.io/privacy-policy/`
+- Wild Horse Privacy Policy: `https://mikhaisuvorovkz.github.io/privacy-policy/`
+- Winter Tiger Privacy Policy: `https://mikhaisuvorovkz.github.io/winter-tiger-family-simulator/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
-- Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
+- Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
+- Winter Tiger Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator`
 
 ## Current content
 
-- Home page with a custom hero image and game description.
-- Privacy policy page for the app package.
+- Home page with a rotating hero carousel for both games.
+- Privacy policy pages for both app packages.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 
 ## Implementation notes
