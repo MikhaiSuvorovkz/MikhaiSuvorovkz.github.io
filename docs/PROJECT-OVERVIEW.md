@@ -1,6 +1,6 @@
 # Project Overview
 
-Last updated: 2026-07-09
+Last updated: 2026-07-13
 
 ## What this repo is
 
@@ -8,8 +8,9 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 (`magic.horse.simulator.free.sim.games.kids`), `Winter Tiger Family Simulator`
 (`unimix.studio.winter.tiger.family.simulator`), `Fox Family Simulator`
 (`unimix.studio.fox.family.simulator`), `Panther Family Simulator`
-(`unimix.studio.panther.family.simulator`), and `Wolf Family Simulator`
-(`unimix.studio.wolf.simulator`).
+(`unimix.studio.panther.family.simulator`), `Wolf Family Simulator`
+(`unimix.studio.wolf.simulator`), and `Snow Leopard Family Simulator`
+(`unimix.studio.snow.leopard.family.simulator`).
 
 ## Live URLs
 
@@ -19,17 +20,19 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Fox Privacy Policy: `https://mikhaisuvorovkz.github.io/fox-family-simulator/privacy-policy/`
 - Panther Privacy Policy: `https://mikhaisuvorovkz.github.io/panther-family-simulator/privacy-policy/`
 - Wolf Privacy Policy: `https://mikhaisuvorovkz.github.io/wolf-simulator/privacy-policy/`
+- Snow Leopard Privacy Policy: `https://mikhaisuvorovkz.github.io/snow-leopard-family-simulator/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 - Winter Tiger Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator`
 - Fox Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.fox.family.simulator`
 - Panther Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.panther.family.simulator`
 - Wolf Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.wolf.simulator`
+- Snow Leopard Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.snow.leopard.family.simulator`
 
 ## Current content
 
 - Home page with a rotating hero carousel for five games.
-- Privacy policy pages for all app packages.
+- Privacy policy pages for all six app packages.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 
 ## Implementation notes
