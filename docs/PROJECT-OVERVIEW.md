@@ -1,6 +1,6 @@
 # Project Overview
 
-Last updated: 2026-07-13
+Last updated: 2026-07-21
 
 ## What this repo is
 
@@ -31,7 +31,7 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 
 ## Current content
 
-- Home page with a rotating hero carousel for five games.
+- Home page with a rotating hero carousel for six games.
 - Privacy policy pages for all six app packages.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 

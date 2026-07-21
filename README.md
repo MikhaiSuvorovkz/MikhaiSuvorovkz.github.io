@@ -11,6 +11,7 @@ Important URLs after GitHub Pages deployment:
 - Panther Privacy Policy: `https://mikhaisuvorovkz.github.io/panther-family-simulator/privacy-policy/`
 - Wolf Privacy Policy: `https://mikhaisuvorovkz.github.io/wolf-simulator/privacy-policy/`
 - Snow Leopard Privacy Policy: `https://mikhaisuvorovkz.github.io/snow-leopard-family-simulator/privacy-policy/`
+- Snow Leopard Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.snow.leopard.family.simulator`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 
 Project docs:
