@@ -1,6 +1,6 @@
 # Project Overview
 
-Last updated: 2026-07-21
+Last updated: 2026-08-03
 
 ## What this repo is
 
@@ -10,7 +10,9 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 (`unimix.studio.fox.family.simulator`), `Panther Family Simulator`
 (`unimix.studio.panther.family.simulator`), `Wolf Family Simulator`
 (`unimix.studio.wolf.simulator`), and `Snow Leopard Family Simulator`
-(`unimix.studio.snow.leopard.family.simulator`).
+(`unimix.studio.snow.leopard.family.simulator`), `Bear Simulator Family 3D`
+(`unimix.studio.bear.simulator.animal.family`), and `Deer Simulator: Animal Family`
+(`unimix.studio.deer.simulator.animal.sim.family`).
 
 ## Live URLs
 
@@ -21,6 +23,8 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Panther Privacy Policy: `https://mikhaisuvorovkz.github.io/panther-family-simulator/privacy-policy/`
 - Wolf Privacy Policy: `https://mikhaisuvorovkz.github.io/wolf-simulator/privacy-policy/`
 - Snow Leopard Privacy Policy: `https://mikhaisuvorovkz.github.io/snow-leopard-family-simulator/privacy-policy/`
+- Bear Privacy Policy: `https://mikhaisuvorovkz.github.io/bear-simulator-family-3d/privacy-policy/`
+- Deer Privacy Policy: `https://mikhaisuvorovkz.github.io/deer-simulator-animal-family/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 - Winter Tiger Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator`
@@ -28,11 +32,13 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Panther Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.panther.family.simulator`
 - Wolf Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.wolf.simulator`
 - Snow Leopard Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.snow.leopard.family.simulator`
+- Bear Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.bear.simulator.animal.family`
+- Deer Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.deer.simulator.animal.sim.family`
 
 ## Current content
 
-- Home page with a rotating hero carousel for six games.
-- Privacy policy pages for all six app packages.
+- Home page with a rotating hero carousel for eight games.
+- Privacy policy pages for all eight app packages.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 
 ## Implementation notes
