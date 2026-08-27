@@ -12,7 +12,7 @@ bidmachine.io,466,DIRECT
 
 #AdMob
 
-google.com, pub-5851292782907536, DIRECT, f08c47fec0942fa0
+google.com, pub-7958472158675518, DIRECT, f08c47fec0942fa0
 
 #Add other networks if applicable
 
