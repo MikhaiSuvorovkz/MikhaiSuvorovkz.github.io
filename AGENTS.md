@@ -17,6 +17,7 @@
 
 - Сайт: `https://mikhaisuvorovkz.github.io/`
 - Privacy Policy: `https://mikhaisuvorovkz.github.io/privacy-policy/`
+- Cyberbeat Privacy Policy: `https://mikhaisuvorovkz.github.io/cyberbeat/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 
@@ -46,6 +47,11 @@
 - Если меняется набор рекламных сетей, обновлять файл по исходному шаблону и отдельно сохранять AdMob строку.
 - Если добавляется новая игра, заводить для нее отдельную страницу и отдельную политику, если у игры свой package name или отдельный лендинг.
 - После любых правок проверять, что корень сайта, `privacy-policy/` и `app-ads.txt` отдают `200`.
+- Страницу `cyberbeat/privacy-policy/index.html` руками не править: это побайтовая копия
+  файла, который генерируется в Unity-проекте `Cyberbeat` из игровой локализации
+  (`python3 -I tools/privacy/build_privacy_page.py`, результат в
+  `Documentation/Privacy/privacy-policy.html`). Обновление политики - перегенерировать там
+  и скопировать файл сюда, чтобы текст в игре и на сайте совпадал.
 - Не делать лишний рефакторинг без задачи.
 
 ## Рабочий порядок

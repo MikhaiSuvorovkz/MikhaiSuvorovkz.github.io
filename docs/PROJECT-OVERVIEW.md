@@ -1,6 +1,6 @@
 # Project Overview
 
-Last updated: 2026-08-03
+Last updated: 2026-11-17
 
 ## What this repo is
 
@@ -11,8 +11,9 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 (`unimix.studio.panther.family.simulator`), `Wolf Family Simulator`
 (`unimix.studio.wolf.simulator`), and `Snow Leopard Family Simulator`
 (`unimix.studio.snow.leopard.family.simulator`), `Bear Simulator Family 3D`
-(`unimix.studio.bear.simulator.animal.family`), and `Deer Simulator: Animal Family`
-(`unimix.studio.deer.simulator.animal.sim.family`).
+(`unimix.studio.bear.simulator.animal.family`), `Deer Simulator: Animal Family`
+(`unimix.studio.deer.simulator.animal.sim.family`), and `Cyberbeat`
+(`com.skillapp.cyberbeat`).
 
 ## Live URLs
 
@@ -25,6 +26,7 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Snow Leopard Privacy Policy: `https://mikhaisuvorovkz.github.io/snow-leopard-family-simulator/privacy-policy/`
 - Bear Privacy Policy: `https://mikhaisuvorovkz.github.io/bear-simulator-family-3d/privacy-policy/`
 - Deer Privacy Policy: `https://mikhaisuvorovkz.github.io/deer-simulator-animal-family/privacy-policy/`
+- Cyberbeat Privacy Policy: `https://mikhaisuvorovkz.github.io/cyberbeat/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 - Winter Tiger Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator`
@@ -34,17 +36,25 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Snow Leopard Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.snow.leopard.family.simulator`
 - Bear Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.bear.simulator.animal.family`
 - Deer Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.deer.simulator.animal.sim.family`
+- Cyberbeat Google Play: not published yet
 
 ## Current content
 
-- Home page with a rotating hero carousel for eight games.
-- Privacy policy pages for all eight app packages.
+- Home page with a rotating hero carousel for eight animal games.
+- Privacy policy pages for all eight animal app packages.
+- Standalone bilingual (EN/RU) privacy policy page for `Cyberbeat`, linked from the home page
+  developer files panel and footer. `Cyberbeat` has no landing page yet.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 
 ## Implementation notes
 
 - GitHub Pages is built from the `main` branch.
 - `privacy-policy.md` uses Jekyll front matter and `_layouts/default.html`.
+- `cyberbeat/privacy-policy/index.html` is an exception: it is a byte-for-byte copy of a file
+  generated in the `Cyberbeat` Unity project, so it has no front matter and keeps its own
+  inline styles. Its source of truth is the in-game localization text, so never edit this page
+  by hand. To update it: run `python3 -I tools/privacy/build_privacy_page.py` in the
+  `Cyberbeat` project, then copy `Documentation/Privacy/privacy-policy.html` over this file.
 - `app-ads.txt` is served from the site root, not from a subpage.
 - The AdMob seller line is present in the root `app-ads.txt`.
 - Public verification already confirmed that the site and `app-ads.txt` return `200`.
