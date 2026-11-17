@@ -28,6 +28,8 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Deer Privacy Policy: `https://mikhaisuvorovkz.github.io/deer-simulator-animal-family/privacy-policy/`
 - Cyberbeat game page: `https://mikhaisuvorovkz.github.io/cyberbeat/`
 - Cyberbeat Privacy Policy: `https://mikhaisuvorovkz.github.io/cyberbeat/privacy-policy/`
+- Skymane: Horse & Pegasus Sim (formerly Forest Horse Simulator) Privacy Policy: `https://mikhaisuvorovkz.github.io/skymane/privacy-policy/`
+  Standalone bilingual (RU/EN) HTML, ads via Appodeal. Package name not recorded yet.
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 - Winter Tiger Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.winter.tiger.family.simulator`

@@ -19,6 +19,7 @@
 - Privacy Policy: `https://mikhaisuvorovkz.github.io/privacy-policy/`
 - Cyberbeat: `https://mikhaisuvorovkz.github.io/cyberbeat/`
 - Cyberbeat Privacy Policy: `https://mikhaisuvorovkz.github.io/cyberbeat/privacy-policy/`
+- Skymane: Horse & Pegasus Sim (бывший Forest Horse Simulator) Privacy Policy: `https://mikhaisuvorovkz.github.io/skymane/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 
