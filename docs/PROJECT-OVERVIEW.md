@@ -26,6 +26,7 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 - Snow Leopard Privacy Policy: `https://mikhaisuvorovkz.github.io/snow-leopard-family-simulator/privacy-policy/`
 - Bear Privacy Policy: `https://mikhaisuvorovkz.github.io/bear-simulator-family-3d/privacy-policy/`
 - Deer Privacy Policy: `https://mikhaisuvorovkz.github.io/deer-simulator-animal-family/privacy-policy/`
+- Cyberbeat game page: `https://mikhaisuvorovkz.github.io/cyberbeat/`
 - Cyberbeat Privacy Policy: `https://mikhaisuvorovkz.github.io/cyberbeat/privacy-policy/`
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Wild Horse Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
@@ -42,8 +43,12 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 
 - Home page with a rotating hero carousel for eight animal games.
 - Privacy policy pages for all eight animal app packages.
+- Landing page for `Cyberbeat` at `/cyberbeat/`, with its own dark neon styling
+  (`assets/cyberbeat.css`) and images in `assets/cyberbeat/`. It is linked from the home page
+  in the "Also from this developer" section and from the footer. The game is not on Google
+  Play yet, so the store button on it is a "coming soon" label, not a link.
 - Standalone bilingual (EN/RU) privacy policy page for `Cyberbeat`, linked from the home page
-  developer files panel and footer. `Cyberbeat` has no landing page yet.
+  developer files panel and footer.
 - Root `app-ads.txt` file for AdMob and mediation sellers.
 
 ## Implementation notes
@@ -55,6 +60,9 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
   inline styles. Its source of truth is the in-game localization text, so never edit this page
   by hand. To update it: run `python3 -I tools/privacy/build_privacy_page.py` in the
   `Cyberbeat` project, then copy `Documentation/Privacy/privacy-policy.html` over this file.
+- `cyberbeat/index.html` is hand-written static HTML with no front matter, because the game's
+  art direction does not fit `assets/styles.css`. Its screenshots, track covers and icon are
+  exported from the `Cyberbeat` Unity project (`reports/` and `Assets/`) with ImageMagick.
 - `app-ads.txt` is served from the site root, not from a subpage.
 - The AdMob seller line is present in the root `app-ads.txt`.
 - Public verification already confirmed that the site and `app-ads.txt` return `200`.

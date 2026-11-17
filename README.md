@@ -13,6 +13,7 @@ Important URLs after GitHub Pages deployment:
 - Snow Leopard Privacy Policy: `https://mikhaisuvorovkz.github.io/snow-leopard-family-simulator/privacy-policy/`
 - Bear Privacy Policy: `https://mikhaisuvorovkz.github.io/bear-simulator-family-3d/privacy-policy/`
 - Deer Privacy Policy: `https://mikhaisuvorovkz.github.io/deer-simulator-animal-family/privacy-policy/`
+- Cyberbeat game page: `https://mikhaisuvorovkz.github.io/cyberbeat/`
 - Cyberbeat Privacy Policy: `https://mikhaisuvorovkz.github.io/cyberbeat/privacy-policy/`
 - Bear Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.bear.simulator.animal.family`
 - Deer Google Play: `https://play.google.com/store/apps/details?id=unimix.studio.deer.simulator.animal.sim.family`
