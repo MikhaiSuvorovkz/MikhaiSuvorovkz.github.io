@@ -41,11 +41,15 @@ Static GitHub Pages site for `Wild Horse Simulator Family 3D`
 
 ## Current content
 
-- Home page with a rotating hero carousel for eight animal games.
+- Home page with a rotating hero carousel: eight animal games plus `Cyberbeat`.
+  Carousel slides take an optional `playLabel` (Cyberbeat points at its own page, not a
+  store listing) and an optional `theme`, where `neon` swaps the green hero overlay in
+  `assets/styles.css` for a dark violet one.
 - Privacy policy pages for all eight animal app packages.
 - Landing page for `Cyberbeat` at `/cyberbeat/`, with its own dark neon styling
   (`assets/cyberbeat.css`) and images in `assets/cyberbeat/`. It is linked from the home page
-  in the "Also from this developer" section and from the footer. The game is not on Google
+  carousel (`assets/cyberbeat-hero.jpg`, composed from in-game screenshots), the "Also from
+  this developer" section and the footer. The game is not on Google
   Play yet, so the store button on it is a "coming soon" label, not a link.
 - Standalone bilingual (EN/RU) privacy policy page for `Cyberbeat`, linked from the home page
   developer files panel and footer.

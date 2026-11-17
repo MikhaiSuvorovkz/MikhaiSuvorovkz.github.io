@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Animal Simulator Games Collection | Family Adventures</title>
-    <meta name="description" content="Official website for Wild Horse, Winter Tiger, Fox, Panther, Wolf, Snow Leopard, Bear, and Deer family simulator games.">
+    <meta name="description" content="Official website for Wild Horse, Winter Tiger, Fox, Panther, Wolf, Snow Leopard, Bear, and Deer family simulator games, and the rhythm runner Cyberbeat.">
     <link rel="preload" as="image" href="/assets/horse-family-hero.png">
     <link rel="preload" as="image" href="/assets/winter-tiger-family-hero.png">
     <link rel="preload" as="image" href="/assets/fox-family-hero.png">
@@ -13,6 +13,7 @@
     <link rel="preload" as="image" href="/assets/snow-leopard-family-hero.png">
     <link rel="preload" as="image" href="/assets/bear-family-hero.png">
     <link rel="preload" as="image" href="/assets/deer-family-hero.png">
+    <link rel="preload" as="image" href="/assets/cyberbeat-hero.jpg">
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
   <body>
@@ -29,7 +30,7 @@
     </header>
 
     <main>
-      <section class="hero" aria-label="Featured simulator games" aria-roledescription="carousel" data-carousel>
+      <section class="hero" aria-label="Featured games" aria-roledescription="carousel" data-carousel data-theme="forest">
         <div class="hero-stage" aria-hidden="true">
           <img
             class="hero-image"
@@ -62,6 +63,7 @@
             <button class="carousel-tab" type="button" data-carousel-tab="5" aria-pressed="false">Snow Leopard</button>
             <button class="carousel-tab" type="button" data-carousel-tab="6" aria-pressed="false">Bear Family</button>
             <button class="carousel-tab" type="button" data-carousel-tab="7" aria-pressed="false">Deer Family</button>
+            <button class="carousel-tab" type="button" data-carousel-tab="8" aria-pressed="false">Cyberbeat</button>
           </div>
         </div>
       </section>
@@ -69,7 +71,7 @@
       <section class="content-section intro">
         <div>
           <h2>Eight family adventures</h2>
-          <p>The homepage rotates between eight animal simulator games. Each game keeps its own store link and privacy page.</p>
+          <p>The homepage carousel rotates between these eight animal simulator games and Cyberbeat. Each game keeps its own store link and privacy page.</p>
         </div>
 
         <div class="game-list" aria-label="Game quick links">
@@ -298,6 +300,16 @@
             imageUrl: '/assets/deer-family-hero.png',
             alt: 'Low-poly deer family beside a river in a bright forest valley.',
           },
+          {
+            title: 'Cyberbeat',
+            description: 'A neon cube rides a road cut to the music. Dash, jump and switch colour across nine original tracks.',
+            playUrl: '/cyberbeat/',
+            playLabel: 'Open game page',
+            privacyUrl: '/cyberbeat/privacy-policy/',
+            imageUrl: '/assets/cyberbeat-hero.jpg',
+            alt: 'Cyberbeat gameplay on a neon road next to the in-game track list.',
+            theme: 'neon',
+          },
         ];
 
         games.forEach(({ imageUrl }) => {
@@ -330,7 +342,9 @@
           heroTitle.textContent = game.title;
           heroDescription.textContent = game.description;
           heroPlay.href = game.playUrl;
+          heroPlay.textContent = game.playLabel || 'View on Google Play';
           heroPrivacy.href = game.privacyUrl;
+          carousel.dataset.theme = game.theme || 'forest';
 
           tabs.forEach((tab, tabIndex) => {
             const isActive = tabIndex === index;

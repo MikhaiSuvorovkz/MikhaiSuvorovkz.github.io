@@ -140,6 +140,12 @@ button {
     linear-gradient(0deg, rgba(18, 35, 24, 0.32), rgba(18, 35, 24, 0));
 }
 
+.hero[data-theme="neon"] .hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(5, 5, 13, 0.86) 0%, rgba(5, 5, 13, 0.58) 42%, rgba(5, 5, 13, 0.14) 74%),
+    linear-gradient(0deg, rgba(8, 6, 20, 0.38), rgba(8, 6, 20, 0));
+}
+
 .hero-content {
   position: relative;
   z-index: 1;
