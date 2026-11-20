@@ -4,6 +4,8 @@
 
 appodeal.com, 2498, DIRECT
 
+appodeal.com, 62776, DIRECT
+
 #BidMachine
 
 bidmachine.io,1,DIRECT
@@ -867,6 +869,10 @@ bidmachine.io,124,RESELLER
 bidmachine.io,162,RESELLER
 
 bidmachine.io,98,RESELLER
+
+bigo.sg,y0hkbizzwn,DIRECT
+
+bigo.sg,y0hkbizzwn,RESELLER
 
 bigo.sg, 1011110, RESELLER
 
