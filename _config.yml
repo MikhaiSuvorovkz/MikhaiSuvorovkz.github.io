@@ -1,5 +1,12 @@
 title: Animal Simulator Games Collection
 description: Official website for Wild Horse, Winter Tiger, Fox, Panther, Wolf, Snow Leopard, Bear, and Deer family simulator games.
-url: "https://mikhaisuvorovkz.github.io"
+url: "https://haenphi.com"
 markdown: kramdown
 permalink: pretty
+exclude:
+  - AGENTS.md
+  - README.md
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - vendor

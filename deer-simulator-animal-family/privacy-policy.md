@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Privacy Policy
-description: Privacy Policy for Deer Simulator: Animal Family.
+description: "Privacy Policy for Deer Simulator: Animal Family."
 permalink: /deer-simulator-animal-family/privacy-policy/
 ---
 
