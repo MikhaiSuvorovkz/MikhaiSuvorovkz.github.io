@@ -1,0 +1,90 @@
+name: Deploy to haenphi.com
+
+# Builds the Jekyll site and uploads it to the production VPS, where Caddy
+# serves it at the root of https://haenphi.com. The SSH key in
+# HAENPHI_SITE_DEPLOY_SSH_KEY is locked on the server to rrsync for the
+# website directory only, so it cannot run commands or touch anything else.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: haenphi-site-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: vars.ENABLE_HAENPHI_DEPLOY == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      JEKYLL_VERSION: "4.3.4"
+      SITE_HOST: haenphi.com
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build site
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          docker run --rm \
+            -v "$PWD":/src:ro \
+            -v "$PWD/_site":/out \
+            -e JEKYLL_VERSION \
+            ruby:3.3-slim \
+            sh -ec 'apt-get -qq update >/dev/null
+                    apt-get -qq install -y --no-install-recommends build-essential >/dev/null
+                    gem install --no-document "jekyll:$JEKYLL_VERSION" >/dev/null
+                    jekyll build --strict_front_matter --disable-disk-cache -s /src -d /out'
+          sudo chown -R "$(id -u):$(id -g)" _site
+          for path in index.html app-ads.txt privacy-policy/index.html; do
+            test -s "_site/$path" || { echo "Missing _site/$path" >&2; exit 1; }
+          done
+
+      - name: Configure SSH
+        shell: bash
+        env:
+          DEPLOY_PRIVATE_KEY: ${{ secrets.HAENPHI_SITE_DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ vars.HAENPHI_SSH_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$DEPLOY_PRIVATE_KEY" || -z "$DEPLOY_KNOWN_HOSTS" ]]; then
+            echo "Deploy SSH secret or pinned known_hosts variable is missing." >&2
+            exit 1
+          fi
+          install -d -m 700 "$HOME/.ssh"
+          printf '%s\n' "$DEPLOY_PRIVATE_KEY" > "$HOME/.ssh/site_deploy_key"
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > "$HOME/.ssh/site_known_hosts"
+          chmod 600 "$HOME/.ssh/site_deploy_key" "$HOME/.ssh/site_known_hosts"
+
+      - name: Upload site
+        shell: bash
+        env:
+          SERVER_HOST: ${{ vars.HAENPHI_SERVER_HOST }}
+          SERVER_PORT: ${{ vars.HAENPHI_SERVER_PORT }}
+          SERVER_USER: ${{ vars.HAENPHI_SERVER_USER }}
+        run: |
+          set -euo pipefail
+          rsync -rlt --checksum --delete --delay-updates \
+            --chmod=D755,F644 \
+            -e "ssh -i $HOME/.ssh/site_deploy_key -p $SERVER_PORT -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$HOME/.ssh/site_known_hosts" \
+            _site/ "$SERVER_USER@$SERVER_HOST:"
+
+      - name: Check public site
+        shell: bash
+        run: |
+          set -euo pipefail
+          for path in / /app-ads.txt /privacy-policy/; do
+            curl -fsS -o /dev/null "https://$SITE_HOST$path"
+          done

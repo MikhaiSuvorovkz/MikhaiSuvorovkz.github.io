@@ -23,6 +23,19 @@
 - app-ads.txt: `https://mikhaisuvorovkz.github.io/app-ads.txt`
 - Google Play: `https://play.google.com/store/apps/details?id=magic.horse.simulator.free.sim.games.kids`
 
+## Публикация на haenphi.com
+
+- Сайт публикуется на `https://haenphi.com/` workflow-ом `.github/workflows/deploy-haenphi.yml`
+  на каждый push в `main`: Jekyll 4 собирает `_site/`, rsync заливает его на VPS в
+  `/opt/haenphi-site/public`, Caddy отдаёт эту папку как статику.
+- Деплой включается переменной репозитория `ENABLE_HAENPHI_DEPLOY=true`. Нужны переменные
+  `HAENPHI_SERVER_HOST`, `HAENPHI_SERVER_PORT`, `HAENPHI_SERVER_USER`, `HAENPHI_SSH_KNOWN_HOSTS`
+  и секрет `HAENPHI_SITE_DEPLOY_SSH_KEY` (ключ на сервере ограничен `rrsync` только этой папкой).
+- Сборка идёт с `--strict_front_matter`: значения во front matter с двоеточием брать в кавычки,
+  иначе деплой упадёт.
+- `AGENTS.md`, `README.md` и `docs/` в сборку не попадают (`exclude` в `_config.yml`).
+- Пути на сайте только абсолютные от корня (`/assets/...`), без `site.url`/`baseurl`.
+
 ## Что уже сделано
 
 - Репозиторий создан и опубликован как `MikhaiSuvorovkz/MikhaiSuvorovkz.github.io`.
